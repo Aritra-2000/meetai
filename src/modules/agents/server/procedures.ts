@@ -75,7 +75,7 @@ export const agentsRouter = createTRPCRouter({
                 .min(MIN_PAGE_SIZE)
                 .max(MAX_PAGE_SIZE)
                 .default(DEFAULT_PAGE_SIZE),
-            search: z.string().nullish()
+            search: z.string().nullish(),
         }))
         .query(async ({ ctx, input }) => {
 
